@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.11.1
+    working_directory: ~/workspace
+    steps:
+      - checkout
+
+      - run:
+          name: Install latest bundlesize
+          command: yarn add @bundlesize/bundlesize
+
+      - run:
+          name: Run bundlesize check
+          command: yarn bundlesize
