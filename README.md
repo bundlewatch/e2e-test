@@ -4,3 +4,6 @@
 This is just for testing end-to-end bundlesize
 
 TEST
+
+
+AGAIN
