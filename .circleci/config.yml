@@ -8,9 +8,9 @@ jobs:
       - checkout
 
       - run:
-          name: Install latest bundlesize
-          command: yarn add @bundlesize/bundlesize
+          name: Install latest bundlewatch
+          command: yarn add bundlewatch
 
       - run:
-          name: Run bundlesize check
-          command: yarn bundlesize --config config.bundlesize.js
+          name: Run bundlewatch check
+          command: yarn bundlewatch --config config.bundlewatch.js
