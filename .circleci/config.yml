@@ -14,4 +14,3 @@ jobs:
       - run:
           name: Run bundlewatch check
           command: DEBUG=true yarn bundlewatch --config config.bundlewatch.js
-          
