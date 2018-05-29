@@ -9,3 +9,5 @@ The BundleWatch app is at https://github.com/bundlewatch/bundlewatch
 The BundleWatch service is at https://github.com/bundlewatch/service
 
 The BundleWatch.io documentation site is at https://github.com/bundlewatch/bundlewatch.io
+
+Changed the readme.
