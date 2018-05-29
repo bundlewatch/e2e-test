@@ -2,7 +2,7 @@ module.exports = {
     "files": [
         {
             "path": "./__testdata__/*.jpg",
-            "maxSize": "500kB"
+            "maxSize": "1kB"
         },
         {
             "path": "./README.md",
