@@ -1,16 +1,23 @@
-version: 2
-jobs:
-  build:
+version: 2.1
+
+executors:
+  node:
     docker:
-      - image: circleci/node:12.14.1
-    working_directory: ~/workspace
+      - image: cimg/node:20.15.1
+
+jobs:
+  test:
+    executor: node
     steps:
       - checkout
-
       - run:
           name: Install latest bundlewatch
           command: yarn add bundlewatch
-
       - run:
           name: Run bundlewatch check
           command: yarn bundlewatch --config config.bundlewatch.js
+
+workflows:
+  e2e:
+    jobs:
+      - test
